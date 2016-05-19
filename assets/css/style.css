@@ -1,0 +1,25 @@
+#imageplace {
+	border: 2px dotted yellow;
+	width: 200px;
+	height: 400px;
+	float:left;
+	box-sizing: border-box;
+}
+
+#thebox {
+	border: 2px dotted yellow;
+	width: 200px;
+	height: 400px;
+	color: white;
+	float: right;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 400px;
+	margin: auto;
+}
+
+body {
+	background-color: #500000;
+}
