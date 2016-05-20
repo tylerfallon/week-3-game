@@ -26,10 +26,25 @@ document.onkeyup = function(event) {
 			var newRemain = remain-1;
 			document.getElementById("remaining").innerHTML = newRemain;
 			}
+
+		if (userGuess == 't'){
+			var word1 = document.getElementById("pos1");
+			word1.innerHTML = "t";
+			}
+
+		if (userGuess == 'e'){
+			var word1 = document.getElementById("pos2");
+			word1.innerHTML = "e";
+			}
+		if (userGuess == 's'){
+			var word1 = document.getElementById("pos3");
+			word1.innerHTML = "s";
+			}
+		if (userGuess == 't'){
+			var word1 = document.getElementById("pos4");
+			word1.innerHTML = "t";
+			}
+
+
 		}
-
-
-
-
-
 	};
