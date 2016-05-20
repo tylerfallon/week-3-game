@@ -16,15 +16,20 @@ document.onkeyup = function(event) {
 			console.log(userGuess);
 		}
 		else {
-			console.log('Guag');
+			var newElement = document.createElement("span");
+			var newUserGuess = document.createTextNode(userGuess);
+			newElement.appendChild(newUserGuess); 
+			document.getElementById("letterlist").appendChild(newElement); 
+
+
+			var remain = document.getElementById("remaining").innerHTML;
+			var newRemain = remain-1;
+			document.getElementById("remaining").innerHTML = newRemain;
+			}
 		}
 
 
 
 
 
-
-
-
 	};
-	}

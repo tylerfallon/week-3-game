@@ -23,3 +23,7 @@
 body {
 	background-color: #500000;
 }
+
+#letterlist {
+	display: inline;
+}
