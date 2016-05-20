@@ -11,9 +11,32 @@ document.onkeyup = function(event) {
 		}
 
 		var userGuess = press;
+		var correctGuess = 0;
 
-		if (userGuess == 't' || userGuess == 'e' || userGuess == 's') {
+
+
+		if (userGuess == 'f' || userGuess == 'u' || userGuess == 'n' || userGuess == "k" || userGuess == 'y' || userGuess == 't' || userGuess == 'o' || userGuess == 'w' || userGuess =='y') {
+			
 			console.log(userGuess);
+
+
+			var correctGuess = document.getElementById("correctguess").innerHTML;
+			var newCorrectGuess = parseInt(correctGuess)+1;
+			document.getElementById("correctguess").innerHTML = newCorrectGuess;
+				
+
+				if (newCorrectGuess == '8') {
+					alert("You won");
+					var oldimage = document.getElementById("imageplace").innerHTML;
+					var funkyimage = "<img src='./assets/images/funkytown.jpg' alt='image1' height='100' width='175'>"
+					document.getElementById("imageplace").innerHTML = funkyimage;
+					var winner = document.getElementById("numwin").innerHTML;
+					var awinner = parseInt(winner)+1;
+					document.getElementById("numwin").innerHTML = awinner;
+
+
+
+				}
 		}
 		else {
 			var newElement = document.createElement("span");
@@ -27,23 +50,47 @@ document.onkeyup = function(event) {
 			document.getElementById("remaining").innerHTML = newRemain;
 			}
 
-		if (userGuess == 't'){
-			var word1 = document.getElementById("pos1");
-			word1.innerHTML = "t";
+		if (userGuess == 'f'){
+			var let1 = document.getElementById("pos1");
+			let1.innerHTML = "f";
+			}
+		if (userGuess == 'u'){
+			var let2 = document.getElementById("pos2");
+			let2.innerHTML = "u";
+			}
+		if (userGuess == 'n'){
+			var let3 = document.getElementById("pos3");
+			let3.innerHTML = "n";
+			}
+		if (userGuess == 'k'){
+			var let4 = document.getElementById("pos4");
+			let4.innerHTML = "k";
+			}
+		if (userGuess == 'y'){
+			var let5 = document.getElementById("pos5");
+			let5.innerHTML = "y";
 			}
 
-		if (userGuess == 'e'){
-			var word1 = document.getElementById("pos2");
-			word1.innerHTML = "e";
-			}
-		if (userGuess == 's'){
-			var word1 = document.getElementById("pos3");
-			word1.innerHTML = "s";
-			}
 		if (userGuess == 't'){
-			var word1 = document.getElementById("pos4");
-			word1.innerHTML = "t";
+			var let6 = document.getElementById("pos6");
+			let6.innerHTML = "t";
 			}
+		if (userGuess == 'o'){
+			var let7 = document.getElementById("pos7");
+			let7.innerHTML = "o";
+			}
+		if (userGuess == 'w'){
+			var let8 = document.getElementById("pos8");
+			let8.innerHTML = "w";
+			}
+		if (userGuess == 'n'){
+			var let9 = document.getElementById("pos9");
+			let9.innerHTML = "n";
+			}
+
+		
+		
+
 
 
 		}
